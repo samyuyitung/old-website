@@ -94,6 +94,7 @@ p{
     text-decoration: none;
 }
 
+
 a:visited{
     color: crimson;
 }
@@ -133,11 +134,14 @@ li{
     text-align: center;  
 }
 .darrow{
+    background-image: url(images/Arrow.svg);
+    background-size: 5.3vw;
     position: absolute;
     bottom: 3vh;
-    float: right;
-    width: 100vw;
+    left: 47.35vw;
+    width: 5.3vw;
     text-align: center;
+    height: 6vh;
 }
 
 /* End Landing page */
@@ -241,8 +245,38 @@ li{
     margin-left: 15vw;
 
 }
-.icon{
+#bike{
     text-align: center;
+    display: inline-block;
+    background-image: url(images/sportinglife.svg);
+    background-size: 6.66vw;
+    text-align: center;
+    width: 6.66vw;
+    height: 6.66vw;
+}
+#tetris{
+    text-align: center;
+    background-image: url(images/tetris.svg);
+    background-size: 6.66vw;
+    text-align: center;
+    width: 6.66vw;
+    height: 6.66vw;
+}
+#ring{
+    text-align: center;
+    background-image: url(images/ringBuoy.svg);
+    background-size: 6.66vw;
+    text-align: center;
+    width: 6.66vw;
+    height: 6.66vw;
+}
+#graffiti{
+    text-align: center;
+    background-image: url(images/graffiti.svg);
+    background-size: 6.66vw;
+    text-align: center;
+    width: 6.66vw;
+    height: 6.66vw;
 }
 
 .box{

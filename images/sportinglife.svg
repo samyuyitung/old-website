@@ -10,12 +10,12 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="400"
-   height="400"
+   width="128"
+   height="128"
    id="svg3085"
    version="1.1"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="New document 2">
+   sodipodi:docname="sportinglife.svg">
   <defs
      id="defs3087" />
   <sodipodi:namedview
@@ -44,7 +44,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -52,7 +52,7 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0,-652.36218)">
+     transform="translate(0,-924.36218)">
     <path
        sodipodi:type="arc"
        style="color:#000000;fill:none;stroke:none;stroke-width:1px;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
@@ -79,7 +79,7 @@
        sodipodi:open="true" />
     <g
        id="g3985"
-       transform="matrix(0.96979167,0,0,0.96979167,-30.102112,224.81551)">
+       transform="matrix(0.31111111,0,0,0.31111111,-9.6568199,786.88355)">
       <path
          transform="matrix(0.73469357,0,0,1.2100835,18.44511,-105.50032)"
          sodipodi:open="true"
