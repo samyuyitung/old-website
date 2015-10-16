@@ -366,7 +366,9 @@
      inkscape:window-height="1137"
      inkscape:window-x="1912"
      inkscape:window-y="-8"
-     inkscape:window-maximized="1" />
+     inkscape:window-maximized="1"
+     showguides="true"
+     inkscape:guide-bbox="true" />
   <metadata
      id="metadata3029">
     <rdf:RDF>
@@ -429,7 +431,8 @@
        x="580.30493"
        y="674.48468"
        id="text5591"
-       sodipodi:linespacing="125%"><tspan
+       sodipodi:linespacing="125%"
+       transform="matrix(1,0,0,1.2943308,0,-197.16785)"><tspan
          sodipodi:role="line"
          id="tspan5593"
          x="580.30493"
