@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="250"
+   height="75"
+   id="svg3202"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="New document 6">
+  <defs
+     id="defs3204">
+    <filter
+       id="filter5645"
+       inkscape:menu-tooltip="Make the lightest parts of the object progressively transparent"
+       inkscape:menu="Transparency utilities"
+       inkscape:label="Light eraser"
+       height="1"
+       width="1"
+       y="0"
+       x="0"
+       color-interpolation-filters="sRGB">
+      <feColorMatrix
+         id="feColorMatrix5647"
+         result="result14"
+         type="luminanceToAlpha"
+         in="SourceGraphic" />
+      <feComposite
+         id="feComposite5649"
+         in2="result14"
+         in="SourceGraphic"
+         result="fbSourceGraphic"
+         operator="out" />
+      <feBlend
+         id="feBlend5651"
+         in2="fbSourceGraphic"
+         mode="normal"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix5653" />
+      <feColorMatrix
+         id="feColorMatrix5655"
+         result="result14"
+         type="luminanceToAlpha"
+         in="fbSourceGraphic" />
+      <feComposite
+         id="feComposite5657"
+         in2="result14"
+         in="fbSourceGraphic"
+         result="fbSourceGraphic"
+         operator="out" />
+      <feBlend
+         id="feBlend5659"
+         in2="fbSourceGraphic"
+         mode="normal"
+         result="result15" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.979899"
+     inkscape:cx="404.37372"
+     inkscape:cy="-50.174915"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1137"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata3207">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-977.36218)">
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;filter:url(#filter5645);font-family:Sans"
+       x="580.30493"
+       y="674.48468"
+       id="text5591"
+       sodipodi:linespacing="125%"
+       transform="matrix(0.83119717,0,0,1.2684256,-482.25812,132.4163)"><tspan
+         sodipodi:role="line"
+         id="tspan5593"
+         x="580.30493"
+         y="674.48468"
+         style="font-size:13px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Monospace;-inkscape-font-specification:Monospace Bold"><tspan
+           style="font-size:13px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#55ff55;fill-opacity:1;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+           id="tspan5609">public static void</tspan><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#181513;fill-opacity:0.61960784;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+           id="tspan3871"> main (String[] args)</tspan></tspan><tspan
+         sodipodi:role="line"
+         x="580.30493"
+         y="690.73468"
+         id="tspan5595"
+         style="font-size:13px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#181513;fill-opacity:0.61960784;font-family:Monospace;-inkscape-font-specification:Monospace Bold">{</tspan><tspan
+         sodipodi:role="line"
+         x="580.30493"
+         y="706.98468"
+         id="tspan5597"
+         style="font-size:13px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Monospace;-inkscape-font-specification:Monospace Bold"><tspan
+           style="font-size:13px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#ff2a2a;fill-opacity:0.52910055;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+           id="tspan5633">    System.out.println</tspan><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#181513;fill-opacity:0.61960784;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+           id="tspan4019">(&quot;</tspan><tspan
+           style="font-size:13px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#00ccff;fill-opacity:0.40211636;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+           id="tspan5639">Hello World</tspan><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#181513;fill-opacity:0.61960784;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+           id="tspan4021">&quot;);</tspan></tspan><tspan
+         sodipodi:role="line"
+         x="580.30493"
+         y="723.23468"
+         id="tspan5599"
+         style="font-size:13px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#181513;fill-opacity:0.61960784;font-family:Monospace;-inkscape-font-specification:Monospace Bold">}</tspan><tspan
+         sodipodi:role="line"
+         x="580.30493"
+         y="739.48468"
+         id="tspan5601"
+         style="font-size:13px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Monospace;-inkscape-font-specification:Monospace Bold" /><tspan
+         sodipodi:role="line"
+         x="580.30493"
+         y="755.73468"
+         id="tspan5603"
+         style="font-size:13px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Monospace;-inkscape-font-specification:Monospace Bold" /><tspan
+         sodipodi:role="line"
+         x="580.30493"
+         y="771.98468"
+         id="tspan5605"
+         style="font-size:13px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Monospace;-inkscape-font-specification:Monospace Bold" /></text>
+  </g>
+</svg>
