@@ -179,7 +179,7 @@ li{
 }
 .school{
     position: relative;
-    background: url(images/e5.svg);
+    background: url(images/building.svg)    ;
     background-color: rgba(100, 149, 237, 0.37);
     background-size: 200vh;
     width: 100vw;
