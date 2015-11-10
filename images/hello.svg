@@ -10,11 +10,11 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="250"
-   height="75"
+   height="80"
    id="svg3202"
    version="1.1"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="New document 6">
+   sodipodi:docname="hello.svg">
   <defs
      id="defs3204">
     <filter
@@ -92,7 +92,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -100,7 +100,7 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0,-977.36218)">
+     transform="translate(0,-972.36218)">
     <text
        xml:space="preserve"
        style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;filter:url(#filter5645);font-family:Sans"
@@ -108,7 +108,7 @@
        y="674.48468"
        id="text5591"
        sodipodi:linespacing="125%"
-       transform="matrix(0.83119717,0,0,1.2684256,-482.25812,132.4163)"><tspan
+       transform="matrix(0.83119717,0,0,1.3111357,-482.25812,101.44011)"><tspan
          sodipodi:role="line"
          id="tspan5593"
          x="580.30493"
