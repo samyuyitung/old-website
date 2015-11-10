@@ -2,8 +2,19 @@
     <link rel="stylesheet" type="text/css" href="main.css">
 <link rel="shortcut icon" href="images/icon.ico">
     <title>Sam Yuyitung</title>
+    
+    <script>
+        window.addEventListener("load", 
+            function(){
+	           var load_screen = document.getElementById("load_screen");
+	           document.body.removeChild(load_screen);
+            });
+    </script>
 </head>
+
+
 <body>
+    <div id="load_screen"><div id="loading"><img id = "load" src="images/loading.gif"></div></div>
     <div class="titleWrapper">
         <div class="name">
             <h1>
