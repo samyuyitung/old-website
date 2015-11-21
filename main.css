@@ -134,7 +134,7 @@ li{
 
 /* Landing page */
 .titleWrapper{
-    background: url('../images/background.svg');
+    background-image: url(images/background.svg);
     background-color: rgba(160,160,160,0.6);
     background-size: cover;
     height: 97vh;
@@ -156,7 +156,7 @@ li{
     text-align: center;  
 }
 .darrow{
-    background: url('../images/Arrow.svg');
+    background-image: url(images/Arrow.svg);
     background-size: 6vw;
     background-repeat: no-repeat;
     position: absolute;
@@ -179,7 +179,7 @@ li{
 }
 .school{
     position: relative;
-    background-image: url('../images/building.svg');
+    background-image: url(images/building.svg);
     background-color: rgba(100, 149, 237, 0.37);
     background-size: cover;
     width: 100vw;
@@ -214,7 +214,7 @@ li{
 }
 
 #android{
-    background: url('../images/android.svg');
+    background-image: url(images/android.svg);
     background-repeat: no-repeat;
     background-size: contain; 
     margin: auto;
@@ -222,7 +222,7 @@ li{
     height: 36vh;
 }
 #bracket{
-    background: url('../images/brackets.svg');
+    background-image: url(images/brackets.svg);
     background-repeat: no-repeat;
     background-size: contain; 
     margin: auto;
@@ -230,7 +230,7 @@ li{
     width:15vw;
 }
 #hello{
-    background: url('../images/hello.svg');
+    background-image: url(images/hello.svg);
     background-repeat: no-repeat;
     background-size: contain; 
     width: 25vw;
@@ -303,17 +303,17 @@ td{
 }
 
 #bike{
-    background: url('../images/sportinglife.svg');
+    background-image: url(images/sportinglife.svg);
 
 }
 #tetris{
-    background: url('../images/tetris.svg');
+    background-image: url(images/tetris.svg);
 }
 #ring{
-    background: url('../images/ringBuoy.svg');
+    background-image: url(images/ringBuoy.svg);
 }
 #graffiti{
-    background: url('../images/graffiti.svg');
+    background-image: url(images/graffiti.svg);
 }
 #tetris, #bike, #ring, #graffiti{
     text-align: center;
