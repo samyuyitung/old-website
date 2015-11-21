@@ -134,9 +134,9 @@ li{
 
 /* Landing page */
 .titleWrapper{
-    background: url(images/background.svg);
+    background: url('../images/background.svg');
     background-color: rgba(160,160,160,0.6);
-    background-size: 200vh;
+    background-size: cover;
     height: 97vh;
     width: 100vw;
     position: relative;
@@ -156,7 +156,7 @@ li{
     text-align: center;  
 }
 .darrow{
-    background: url(images/Arrow.svg);
+    background: url('../images/Arrow.svg');
     background-size: 6vw;
     background-repeat: no-repeat;
     position: absolute;
@@ -179,9 +179,9 @@ li{
 }
 .school{
     position: relative;
-    background-image: url(images/building.svg);
+    background-image: url('../images/building.svg');
     background-color: rgba(100, 149, 237, 0.37);
-    background-size: 200vh;
+    background-size: cover;
     width: 100vw;
     height: 85vh;
     
@@ -212,28 +212,27 @@ li{
     height: 88vh;
     
 }
+
 #android{
-    text-align: center;
-    background: url(images/android.svg);
+    background: url('../images/android.svg');
     background-repeat: no-repeat;
+    background-size: contain; 
     margin: auto;
-    background-size: 30vh;
     width: 17vw;
     height: 36vh;
 }
 #bracket{
-    text-align: center;
-    background: url(images/brackets.svg);
+    background: url('../images/brackets.svg');
     background-repeat: no-repeat;
+    background-size: contain; 
     margin: auto;
-    background-size: 15vw;
     height: 21vh;
     width:15vw;
 }
 #hello{
-    background: url(images/hello.svg);
+    background: url('../images/hello.svg');
     background-repeat: no-repeat;
-    background-size: 25vw;
+    background-size: contain; 
     width: 25vw;
     height: 15vh;
     margin: auto
@@ -290,54 +289,47 @@ li{
     text-align: center;
 }
 
-.subtitle{
-    text-align: center;
+td{
+   background-repeat: no-repeat;
 }
 #work{
-    width: 70vw;
-    -webkit-column-count: 7; /* Chrome, Safari, Opera */
-    -moz-column-count: 7; /* Firefox */
-    column-count: 7;
+    width: 80%;
+    -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
     height: 92vh;
     margin-left: 15vw;
 
 }
+
 #bike{
-    text-align: center;
-    display: inline-block;
-    background: url(images/sportinglife.svg);
-    background-size: 6.66vw;
-    text-align: center;
-    width: 6.66vw;
-    height: 6.66vw;
+    background: url('../images/sportinglife.svg');
+
 }
 #tetris{
-    text-align: center;
-    background: url(images/tetris.svg);
-    background-size: 6.66vw;
-    text-align: center;
-    width: 6.66vw;
-    height: 6.66vw;
+    background: url('../images/tetris.svg');
 }
 #ring{
-    text-align: center;
-    background: url(images/ringBuoy.svg);
-    background-size: 6.66vw;
-    text-align: center;
-    width: 6.66vw;
-    height: 6.66vw;
+    background: url('../images/ringBuoy.svg');
 }
 #graffiti{
-    text-align: center;
-    background: url(images/graffiti.svg);
-    background-size: 6.66vw;
-    text-align: center;
-    width: 6.66vw;
-    height: 6.66vw;
+    background: url('../images/graffiti.svg');
 }
-
-.box{
+#tetris, #bike, #ring, #graffiti{
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    width: 13vh;
+    height: 13vh;
+}
+.lbox{
     text-align: right;
+    margin-right: 4vw
+}
+.rbox{
+    text-align: left;
+    margin-right: 4vw
 }
 .noselect {
     -webkit-touch-callout: none;
