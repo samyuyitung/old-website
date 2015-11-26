@@ -59,8 +59,8 @@ h4{
 h5{
     font-family: Futura;
     color: floralwhite;
-    font-size: 7vh;
-    line-height: 19vh;
+    font-size: 4vh;
+    line-height: 9vh;
     margin: 0;
 }
 
@@ -301,7 +301,9 @@ td{
     margin-left: 15vw;
 
 }
-
+#translaid{
+    background-image: url(images/translaid.svg);
+}
 #bike{
     background-image: url(images/sportinglife.svg);
 
@@ -315,7 +317,7 @@ td{
 #graffiti{
     background-image: url(images/graffiti.svg);
 }
-#tetris, #bike, #ring, #graffiti{
+#tetris, #bike, #ring, #graffiti, #translaid{
     text-align: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -325,27 +327,20 @@ td{
 }
 .lbox{
     text-align: right;
-    margin-right: 4vw
+    margin-right: 2vw
 }
 .rbox{
     text-align: left;
     margin-right: 4vw
 }
-.noselect {
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
+
 /*End experiences*/
 
 /*Footer*/
 .footer{
     position: relative;
     width: 100vw;
-    height: 20vh;
+    height: 10vh;
     background-color: cornflowerblue;
     margin-top: -1vh;
 }
@@ -354,7 +349,7 @@ td{
 
     background-color: cornflowerblue;
     position: relative;
-    height: 19vh;
+    height: 9vh;
     width: 31vw;
     text-align: center;
     float: left;  
