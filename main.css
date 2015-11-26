@@ -367,7 +367,9 @@ td{
     text-decoration-color:floralwhite;
 }
 #contact{
-    width: 105vw;
+    position: relative;
+    left: 3.5vw;
+    width: 93vw;
     height: 0vh;
     padding: 0;
 
