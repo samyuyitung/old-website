@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="Capa_1"
+   x="0px"
+   y="0px"
+   viewBox="0 0 250.579 250.579"
+   style="enable-background:new 0 0 250.579 250.579;"
+   xml:space="preserve"
+   inkscape:version="0.48.4 r9939"
+   width="100%"
+   height="100%"
+   sodipodi:docname="menu.svg"><metadata
+   id="metadata40"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><defs
+   id="defs38"><filter
+     id="filter3017"
+     style="color-interpolation-filters:sRGB;"
+     inkscape:label="Drop Shadow"><feFlood
+       id="feFlood3019"
+       flood-opacity="0.5"
+       flood-color="rgb(0,0,0)"
+       result="flood" /><feComposite
+       id="feComposite3021"
+       in2="SourceGraphic"
+       in="flood"
+       operator="in"
+       result="composite1" /><feGaussianBlur
+       id="feGaussianBlur3023"
+       in="composite"
+       stdDeviation="2"
+       result="blur" /><feOffset
+       id="feOffset3025"
+       dx="4"
+       dy="4"
+       result="offset" /><feComposite
+       id="feComposite3027"
+       in2="offset"
+       in="SourceGraphic"
+       operator="over"
+       result="composite2" /></filter></defs><sodipodi:namedview
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1"
+   objecttolerance="10"
+   gridtolerance="10"
+   guidetolerance="10"
+   inkscape:pageopacity="0"
+   inkscape:pageshadow="2"
+   inkscape:window-width="1920"
+   inkscape:window-height="1017"
+   id="namedview36"
+   showgrid="false"
+   inkscape:zoom="0.94181875"
+   inkscape:cx="125.2895"
+   inkscape:cy="125.2895"
+   inkscape:window-x="-8"
+   inkscape:window-y="-8"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="Capa_1" />
+<g
+   id="Menu"
+   style="fill:#ffffff;filter:url(#filter3017)">
+	<path
+   style="fill-rule:evenodd;clip-rule:evenodd;fill:#ffffff"
+   d="M22.373,76.068h205.832c12.356,0,22.374-10.017,22.374-22.373   c0-12.356-10.017-22.373-22.374-22.373H22.373C10.017,31.323,0,41.339,0,53.696C0,66.052,10.017,76.068,22.373,76.068z    M228.205,102.916H22.373C10.017,102.916,0,112.933,0,125.289c0,12.357,10.017,22.373,22.373,22.373h205.832   c12.356,0,22.374-10.016,22.374-22.373C250.579,112.933,240.561,102.916,228.205,102.916z M228.205,174.51H22.373   C10.017,174.51,0,184.526,0,196.883c0,12.356,10.017,22.373,22.373,22.373h205.832c12.356,0,22.374-10.017,22.374-22.373   C250.579,184.526,240.561,174.51,228.205,174.51z"
+   id="path4" />
+</g>
+<g
+   id="g6">
+</g>
+<g
+   id="g8">
+</g>
+<g
+   id="g10">
+</g>
+<g
+   id="g12">
+</g>
+<g
+   id="g14">
+</g>
+<g
+   id="g16">
+</g>
+<g
+   id="g18">
+</g>
+<g
+   id="g20">
+</g>
+<g
+   id="g22">
+</g>
+<g
+   id="g24">
+</g>
+<g
+   id="g26">
+</g>
+<g
+   id="g28">
+</g>
+<g
+   id="g30">
+</g>
+<g
+   id="g32">
+</g>
+<g
+   id="g34">
+</g>
+</svg>

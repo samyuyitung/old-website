@@ -1,284 +1,324 @@
+<!DOCTYPE html>
 <head>
     <link rel="stylesheet" type="text/css" href="main.css">
-<link rel="shortcut icon" href="images/icon.ico">
+    <link rel="shortcut icon" href="images/icon.ico">
     <title>Sam Yuyitung</title>
-    
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script>
-        window.addEventListener("load", 
-            function(){
-	           var load_screen = document.getElementById("load_screen");
-	           document.body.removeChild(load_screen);
+    $(document).ready(function(){
+        $("#arrow").mouseenter(function(){
+            $("#arrow").css("background-color","rgb(42, 187, 155)");
+            $("#arrow").animate({top: "+=10px"},'slow');
+        });
+        $("#arrow").mouseleave(function(){
+            $("#arrow").animate({top: "-=10px"},'slow');
+            $("#arrow").css("background-color","rgba(0,0,0,0)");
+        });
+        
+        $(".icon").click(function(){
+            
+            $("#house").fadeOut(250).delay(200);
+            if($($(this).attr("target")).is(":visible")){
+                $(".bio").slideUp(250).delay(200);
+                $("#house").fadeIn(250);
+            }
+            else{
+                $(".bio").slideUp(250).delay(200);
+                $($(this).attr("target")).slideDown(250);
+            } 
+        });
+        
+        var start = $("#nav").offset().top + $("#home").height() + $("#about").height() - 50;
+        var end = start + $("#portfolio").height() + 50;;
+        $(document).scroll(function(){
+        if($(this).scrollTop() > start && $(this).scrollTop() < end)
+        {   
+            $('#nav').css({"background":"rgb(42, 187, 155)"});
+        } else {
+        $('#nav').css({"background":"transparent"});
+    }
+});
+        window.addEventListener("load",
+            function () {
+                var load_screen = document.getElementById("load_screen");
+                document.body.removeChild(load_screen);
+        });
+                
+            $('a[href*=#]:not([href=#])').click(function() {
+                if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') &&                   location.hostname == this.hostname) {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                    if (target.length) {
+                        $('html,body').animate({
+                            scrollTop: target.offset().top
+                        }, 1000);
+                    return false;
+                    }
+                }
             });
+        
+    });
     </script>
+
 </head>
 
-
 <body>
-    <div id="load_screen"><div id="loading"><img id = "load" src="images/loading.gif"></div></div>
-    <div class="titleWrapper">
-        <div class="name">
+    <div id="load_screen">
+        <div id="loading"><img id="load" src="images/rolling.gif"></div>
+    </div>
+    <div id="nav">
+        <ul>
+            <li>
+                <a class="header" href="#timeline"><h9>timeline</h9></a>
+            </li> 
+            <li>
+                <a class="header" href="#portfolio"><h9>portfolio</h9></a>
+            </li> 
+            <li>
+                <a class="header" href="#about"><h9>about</h9></a>
+            </li>
+            <li>
+                <a class="header" href="#home"><h9>home</h9></a>
+            </li>
+
+        </ul>
+    </div>
+    <div id="home">
+<!--        <img src="images/background.svg" width="200%">-->
+        <div id="name">
             <h1>
                 Sam Yuyitung
             </h1>
-        </div>
-        <div class="desc">
             <h2>
-                front end developer | UX/UI designer
+                software developer
+                <br>
+                
             </h2>
         </div>
+        <div id="arrow">
+            <a id="arrow-cover" href="#about"><span></span></a>
+        </div>
+    </div>
+    <div id="about">
+        <div id="quote">
+            <h4> Hi, I'm Sam...</h4>
+            <h7>
+            I am a studying systems design engineering at the University of Waterloo in Ontario, Canada. But born and raised in Toronto
+<br><br>
+            Outside of the classroom, I love to code and make cool stuff. Whether its at an organized hackathon, or a personal project, I always have something on the go. I tend to gravitate towards front end development, but I am activly learning about human computer interaction
         
-            <a href="#education">
-                <div class="darrow"></div>
-            </a>
-    </div>
-    <div class="educationWrapper" id="education">
-        <div class="title">
-                <h3>
-                    education
-                </h3>
-        </div>
-        <div class="school">
-            <div class="banner">
-                <h4> 
-                    1A systems design engineering
-                    <br>
-                    University of Waterloo
-                    <br>
-                    class of 2020
-                </h4>
-            </div>
+<br><br>
+                
+
+            </h7>
         </div>
     </div>
-    <div class="skillsWrapper">
-        <div class="title">
-            <h3>
-                skills
-            </h3>
+    <div id="portfolio">
+        <div id="title">
+            <h6>Portfolio</h6>
         </div>
-        <div class="skills">
-            <div class="boxWrapper">
-                <table id="skill">
-                    <tr id="first">
-                        <td id="ski">
-                            <div id="bracket"></div>
-                        </td>
-                        <td id="ski">
-                            <div id="android"></div>
-                        </td>
-                        <td id="ski">
-                            <div id="hello"></div>
-                        </td>
-                    
-                    </tr>
-                    <tr>
-                        <td id="ski">
-                            <h6>
-                                web development 
-                            </h6>
-                        </td>
-                        <td id="ski">
-                            <h6>
-                                android development 
-                            </h6>
-                        </td>
-                        <td id="ski">
-                            <h6>
-                                core programming 
-                            </h6>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td id="ski">
-                            <p>    
-                                HTML5, CSS3 and Javascript 
-                                <br>
-                                front end developer
-                            </p>
-                        </td>
-                        <td id="ski">
-                            <p>   
-                                Android Studios, XML  
-                                <br>
-                                UX / UI designer
-                            </p>
-                        </td>
-                        <td id="ski">
-                            <p>
-                                Java, Eclipse, C++
-                                <br>
-                                game developer
-                            </p>
-                        </td>
-                    </tr>
-                </table>
-            </div>    
+        <div id="subtitle">
+            <h3>click the icons to learn more</h3>
         </div>
-    </div>
-    <div class="workWrapper">
-        <div class="title">
-            <h3>
-                experiences
-            </h3>
-        </div>
-        <div class="experience">
-            <div class="boxwrap">
-                <table  id="work" class="noselect">
-                    <tr>
-                        <td>
-                            <div class="lbox">
-                                <h8>
-                                    work
-                                </h8>
-                            </div>
-                        </td>
-                        <td>
-                            &nbsp;
-                        </td>
-                        <td>
-                            <div class="rbox">
-                                <h8>
-                                    projects
-                                </h8>    
-                            </div>    
-                        </td>
-                    </tr>
-                    
-                    <tr>
-                        <td>
-                            &nbsp;
-                        </td>
-                        
-                        <td>
-                            <div id="translaid">
-                            </div>
-                        </td>
-                      
-                        <td>
-                            <div class="rbox">
-                                <h7>
-                                    Nov 2015
-                                    <br>
-                                    <a id="graf" target="_blank" href="http://devpost.com/software/translaid-ouhz1y">Translaid</a> (EngHack Fall 2015)
-                                    <br>
-                                    Full stack developer
-                                    
-                                </h7>
-                            </div>
-                        </td>
-                    
-                    <tr>
-                        <td>
-                            <div class="lbox">
-                                <h7>
-                                    May - Sept 2015
-                                    <br>
-                                    Sporting Life Bikes and Boards
-                                    <br>
-                                    sales associate
-                                </h7>
-                            </div>    
-                        </td>
-                        <td>
-                            <div id="bike">
-                            </div>
-                        </td>
-                        <td>
-                            &nbsp;
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            &nbsp;
-                        </td>
-                        
-                        <td>
-                            <div id="tetris">
-                            </div>
-                        </td>
-                      
-                        <td>
-                            <div class="rbox">
-                                <h7>
-                                    May - June 2015
-                                    <br>
-                                    Tetris (Grade 12 Project)
-                                    <br>
-                                    Java game developer
-                                </h7>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="lbox">
-                                <h7>
-                                    June 2013 - Aug 2015 
-                                    <br>
-                                    City of Toronto: Parks and Rec
-                                    <br>
-                                    wading pool attendant
-                                </h7>
-                            </div>        
-                        </td>
-                        <td>
-                            <div id="ring"></div>
-                        </td>
-                        <td>
-                            &nbsp;
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            &nbsp;
-                        </td>
-                        <td>
-                            <div id="graffiti">
-                            </div>
-                        </td>
-                        <td>
-                            <div class="rbox">
-                                <h7>
-                                    NT Graffiti digital platforms
-                                    <br>
-                                    website and <a id="graf" target="_blank" href="https://play.google.com/store/apps/details?id=com.NTCI.graffiti">Android application</a>
-                                    <br>
-                                    design lead and front end developer
-                                    <br>
-                                </h7>
-                            </div>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-    </div>
-    <div class="footer">
-        <table id="contact">
+        <table id="icons">
             <tr>
                 <td>
-                    <div class="button">
-                        <a id="bot" target="_blank" href="Sam%20Yuyitung%20Resume.pdf">
-                            <h5>resume</h5>    
-                        </a>
-                    </div>
+                    <img class="icon" target="#translaid" src="images/translaid.svg" width="100%">
                 </td>
                 <td>
-                    <div class="button">
-                        <a id="bot" target="_blank" href="mailto:samyuyitung@gmail.com">
-                            <h5>hire me!</h5>
-                        </a>
-                    </div>
+                    <img class="icon" target="#myo" src="images/myorganizer.svg" width="100%">
                 </td>
                 <td>
-                    <div class="button">
-                        <a id="bot" target="_blank"href="https://github.com/syuyitung">
-                            <h5>
-                                github
-                            </h5>
-                        </a>
-                    </div>
+                    <img class="icon" target="#tetris" src="images/tetris.svg" width="100%">
+                </td>
+                <td>
+                    <img class="icon" target="#graffiti" src="images/graffiti.svg" width="100%">
                 </td>
             </tr>
         </table>
+        <table id="house">
+            <tr>
+                <td>
+                    <h5>Translaid</h5>
+                </td>
+                <td>
+                    <h5>MyOrganizer</h5>
+                </td>
+                <td>
+                    <h5>Tetris</h5>
+                </td>
+                <td>
+                    <h5>NT Graffiti</h5>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        a Myo armband powered gesture to text to speech translator
+                    </p>
+                </td>
+                <td>
+                    <p>
+                        a facilitator for stand-up meetings powered by a Myo armband    
+                    </p>
+                </td> 
+                <td>
+                    <p>
+                        a rendition of the classic arcade games with cool new features!
+                    </p>
+                </td>
+                <td>
+                    <p>
+                        a complementary digital edition of the top student newspaper in the TDSB
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p> 
+                        Java, Lua and an Arduino 
+                    </p>
+                </td>
+                <td>
+                    <p> 
+                         MEAN.io stack and Lua  
+                    </p>
+                </td>
+                <td>
+                    <p> 
+                         Java applet
+                    </p>
+                </td>
+                <td>
+                    <p> 
+                         HTML, CSS, JQuery
+                    </p>
+                </td>
+            </tr>
+        </table>
+        <div class="bio" id="graffiti">
+            <div id=title>
+                <h5>NT Graffiti</h5>
+            </div>
+            <div class="bioquote">
+                <p>Graffiti, the North Toronto CI student newspaper, is one of the most decorated student newspapers in all of Toronto. Coming out with 4 print copies a year sometimes is not enough. Me and a team created a digital edition of the newspaper. This allowed for additional content to complement the print edition of the newspaper.<br>
+    Some of these advantages of the digital platform are:<br>
+    &nbsp&nbsp&nbsp-   Sharing of articles and content with those not at the school<br>
+    &nbsp&nbsp&nbsp-   Additional media outlets (Podcasts, videos) <br>
+    &nbsp&nbsp&nbsp-   Time sensitive news (school sports scores, winners)<br><br>
+                    the website was a huge success leading to increased visibility and readership to the infamous student newspaper.
+                </p>
+            </div>
+            <a href="https://github.com/Anfa-am/Graffiti" target="_blank"><img class="minicon" src="images/github.svg" width="100%"></a>
+        </div>
+        <div class="bio" id="tetris">
+            <div id=title>
+                <h5>Tetris</h5>
+            </div>
+            <div class="bioquote">
+                <p>Tetris is one of the most storied computer games of all time. From its humble beginnings in arcades to being the bestselling Nintendo Gameboy game. Anyone and everyone knows what Tetris is. <br> <br> Serving as my capstone project for my grade 12 computer science class I challenged myself to recreate and expand on this game in cool new ways, and make it look pretty.  <br><br> Built in Java using jGrasp and utilising the Swing library, allowed me to implement cool new game modes such as invisible and ludicrous speed. All the while maintaining the core mechanics and feel of the classic arcade game. <br><br>
+                </p>
+            </div>
+            <a href="https://github.com/syuyitung/tetris" target="_blank"><img class="minicon" src="images/github.svg" width="100%"></a>
+        </div>
+        <div class="bio" id="myo">
+            <div id=title>
+                <h5>MyOrganizer</h5>
+            </div>
+            <div class="bioquote">
+                <p>The <a class="link" href="https://www.myo.com/" target="_blank">Myo</a> armband is a super cool cutting edge piece of technology that potentially has many applications for automating tasks. <br><br> Deloitte challenged my team to develop a use for the Myo to improve office productivity. To which we created a facilitator for stand-up meetings. Allowing the team members to actually display what they did rather than just show it and by adding the Myo allows these meetings to not be situated huddled around a laptop, as it is powered by gestures. <br><br> Furthermore, we wanted to add some extra productivity to it, and we decide to integrate a calendar / to-do list to fold events and deadlines into these meetings. Outside of the meeting time, the user has access to these calendars and can be shared within a team to have a constantly updating calendar and to-do list.
+                </p>
+            </div><a href="https://github.com/nickhaughton/Myo" target="_blank"><img class="minicon" src="images/github.svg" width="100%"></a>
+        </div>
+        <div class="bio" id="translaid">
+            <div id=title>
+                <a class="link" href="http://devpost.com/software/translaid-ouhz1y" target="_blank">    <h5>Translaid</h5></a>
+            </div>
+            <div class="bioquote">
+                <p>
+                    At its core, the Myo allows the user to trigger events with gestures. When coming up with a potential project for EngHack 2015, my team thought of creating a sign language tool using the Myo. However the Myo cannot detect the small muscle movements caused by the position of a finger. Therefore we decided to come up with a way to use the Myo as a communication tool. <br><br> The end result was a gesture to text to speech communicator that is linked to the 15 most common phrases to assist anyone who can't speak the language, or can't speak total. <br><br> Our program through Bluetooth sent the information to a computer which has audio and visual feedback to communicate the phrase. In addition, we integrated an Arduino Uno to show the endless possibilities of this device.
+                </p>
+            </div>
+            <a href="https://github.com/joelzeng/Translaid" target="_blank"><img class="minicon" src="images/github.svg" width="100%"></a>
+        </div>
     </div>
+    
+    
+    <div id="timeline">
+        <div id="topper">
+            <h8>My story</h8>
+        </div>
+        <table id="story">
+            <tr>
+                <td class="lcell">
+                    <h5>City Of Toronto</h5><h7>Wading pool attendant<br>June 2013 - Sept 2015</h7>
+                </td>
+                <td  class="ccell">
+                    <img class="pic" src="images/ringBuoy.svg" width="100%">
+                </td>
+                <td>
+                    &nbsp   
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp
+                </td>
+                <td class="ccell">
+                    <img class="pic" src="images/nt.svg" width="100%">
+                </td>
+                <td class="rcell">
+                    <h5>North Toronto CI</h5><h7>Graduated June 2015</h7>
+                </td>
+            </tr>
+            <tr>
+                <td class="lcell">
+                    <h5>Sporting Life</h5><h7>Sales associate<br>May - Sept 2015</h7>
+                </td>
+                <td class="ccell">
+                    <img class="pic" src="images/sportinglife.svg" width="100%">
+                </td>
+                <td>
+                    &nbsp   
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp
+                </td>
+                <td class="ccell">
+                    <img class="pic" src="images/waterloo.svg" width="100%">
+                </td>
+                <td class="rcell">
+                    <h5>University of Waterloo</h5><h7>Systems Design Engineering<br>Sept 2015 - April 2020</h7>
+                </td>
+            </tr>
+        </table>
+        <div id="ending-note">
+            <h7>Want to learn more about me?<br> check out my resume</h7>
+         </div>
+        <a href="Sam%20Yuyitung%20Resume.pdf" target="_blank"><img id="resume" src="images/Resume.svg" width="200%"></a>
+    </div>
+    <div id="footer">
+        <div id="title">
+            <h5>Contact</h5>
+        </div>
+        <table id="footer-list">
+            <tr>
+                <td id="list">
+                    <a href="https://github.com/syuyitung" target="_blank"><img class="ending-link" src="images/gb.svg" width="100%"></a>
+                </td>
+                <td id="list">
+                    <a href="mailto:samyuyitung@gmail.com" target="_blank"><img class="ending-link" src="images/email.svg" width="100%"></a>
+                </td>
+                <td id="list">
+                    <a href="https://ca.linkedin.com/in/sam-yuyitung-798792107" target="_blank"><img class="ending-link" src="images/linkedin.svg" width="100%"></a>
+                </td>
+            </tr>
+        </table>
+        <div id="fine-print">
+            <h9> Sam Yuyitung &copy 2015</h9>
+        </div>
+    </div>
+    <applet
 </body>
