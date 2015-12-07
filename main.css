@@ -187,8 +187,10 @@ li{
 #quote{
     margin-top: 3vh;
     position: relative;
-    width: 50vw;
-    left: 25vw;
+    top: 2vh;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /*portfolio*/
