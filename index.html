@@ -6,6 +6,7 @@
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script>
     $(document).ready(function(){
+        //Arrpw
         $("#arrow").mouseenter(function(){
             $("#arrow").css("background-color","rgb(42, 187, 155)");
             $("#arrow").animate({top: "+=10px"},'slow');
@@ -15,6 +16,7 @@
             $("#arrow").css("background-color","rgba(0,0,0,0)");
         });
         
+        //Portfolio bio
         $(".icon").click(function(){
             
             $("#house").fadeOut(250).delay(200);
@@ -27,21 +29,20 @@
                 $($(this).attr("target")).slideDown(250);
             } 
         });
-        
+        //Make nav bar turquoise over portfolio
         var start = $("#nav").offset().top + $("#home").height() + $("#about").height() - 50;
-        var end = start + $("#portfolio").height() + 50;;
+        var end = start + $("#portfolio").height() + 50;
         $(document).scroll(function(){
-        if($(this).scrollTop() > start && $(this).scrollTop() < end)
-        {   
-            $('#nav').css({"background":"rgb(42, 187, 155)"});
-        } else {
-        $('#nav').css({"background":"transparent"});
-    }
-});
-        window.addEventListener("load",
-            function () {
-                var load_screen = document.getElementById("load_screen");
-                document.body.removeChild(load_screen);
+            if($(this).scrollTop() > start && $(this).scrollTop() < end)
+            {   
+                $('#nav').css({"background":"rgb(42, 187, 155)"});
+            } else {
+                $('#nav').css({"background":"transparent"});
+            }
+        });
+    //Window loading
+        $(window).on("load", function() {
+            $("#load_screen").fadeOut("fast");
         });
                 
             $('a[href*=#]:not([href=#])').click(function() {
@@ -105,7 +106,7 @@
             <h7>
             I am a studying systems design engineering at the University of Waterloo in Ontario, Canada. But born and raised in Toronto
 <br><br>
-            Outside of the classroom, I love to code and make cool stuff. Whether its at an organized hackathon, or a personal project, I always have something on the go. I tend to gravitate towards front end development, but I am activly learning about human computer interaction
+            Outside of the classroom, I love to code and make cool stuff. Whether its at an organized hackathon, or a personal project, I always have something on the go. I tend to gravitate towards front end development, wearables and human computer interaction
         
 <br><br>
                 
@@ -228,7 +229,8 @@
             <div class="bioquote">
                 <p>The <a class="link" href="https://www.myo.com/" target="_blank">Myo</a> armband is a super cool cutting edge piece of technology that potentially has many applications for automating tasks. <br><br> Deloitte challenged my team to develop a use for the Myo to improve office productivity. To which we created a facilitator for stand-up meetings. Allowing the team members to actually display what they did rather than just show it and by adding the Myo allows these meetings to not be situated huddled around a laptop, as it is powered by gestures. <br><br> Furthermore, we wanted to add some extra productivity to it, and we decide to integrate a calendar / to-do list to fold events and deadlines into these meetings. Outside of the meeting time, the user has access to these calendars and can be shared within a team to have a constantly updating calendar and to-do list.
                 </p>
-            </div><a href="https://github.com/nickhaughton/Myo" target="_blank"><img class="minicon" src="images/github.svg" width="100%"></a>
+            </div>
+            <a href="https://github.com/nickhaughton/Myo" target="_blank"><img class="minicon" src="images/github.svg" width="100%"></a>
         </div>
         <div class="bio" id="translaid">
             <div id=title>
