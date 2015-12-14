@@ -161,12 +161,8 @@ li{
     position: relative;
     top: 84vh;
     left: 46vw;
-    background-color:rgba(0,0,0,0);
     border-radius: 4vh;
-    height: 8vh;
     width: 8vh;
-    background-image: url(images/arrow.svg);
-    background-size: contain;
 }
 #arrow-cover{
     position:absolute; 
