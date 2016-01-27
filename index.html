@@ -1,81 +1,89 @@
 <!DOCTYPE html>
+
 <head>
     <link rel="stylesheet" type="text/css" href="main.css">
     <link rel="shortcut icon" href="images/icon.ico">
-    <title>Sam Yuyitung</title> 
+    <title>Sam Yuyitung</title>
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
     <script>
-    $(document).ready(function(){
-        //Arrpw
-        $("#arrow").mouseenter(function(){
-            $("#arrow").css("background-color","rgb(42, 187, 155)");
-            $("#arrow").animate({top: "+=1vh"},'slow');
-        });
-        $("#arrow").mouseleave(function(){
-            $("#arrow").animate({top: "-=1vh"},'slow');
-            $("#arrow").css("background-color","rgba(0,0,0,0)");
-        });
-        
-        //Portfolio bio
-        $(".icon").click(function(){
-            
-            
-            if($(".info").is(":visible")){
-                $(".info").fadeOut(250).delay(200);
-                $($(this).attr("target")).slideDown(250);
-            
-            }
-            else if($($(this).attr("target")).is(":hidden")){
-                $(".bio").slideUp(250).delay(200);
-                $($(this).attr("target")).slideDown(250);
-            }
-            else if($($(this).attr("target")).is(":visible")){
-                $(".bio").slideUp(250).delay(200);
-                $(".info").fadeIn(250);
-            }
-         
-        });
-//        $("#portfolio").click(function(){
-//            if($("#house").is(":hidden")){
-//                $(".bio").slideUp(250).delay(200);
-//                $("#house").fadeIn(250);    
-//            }
-//        });
-        
-        //Make nav bar turquoise over portfolio
-        var start = $("#nav").offset().top + $("#home").height() + $("#about").height() - 50;
-        var end = start + $("#portfolio").height() + 50;
-        $(document).scroll(function(){
-            if($(this).scrollTop() > start && $(this).scrollTop() < end)
-            {   
-                $('#nav').css({"background":"rgb(42, 187, 155)"});
-            } else {
-                $('#nav').css({"background":"transparent"});
-            }
-        });
-    //Window loading
-        $(window).on("load", function() {
-            $("body").animate({scrollTop: 0});
-            $("#load_screen").fadeOut("fast");
-        });
-                
-            $('a[href*=#]:not([href=#])').click(function() {
-                if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') &&                   location.hostname == this.hostname) {
+        $(document).ready(function () {
+            //Arrpw
+            $("#arrow").mouseenter(function () {
+                $("#arrow").css("background-color", "rgb(42, 187, 155)");
+                $("#arrow").animate({
+                    top: "+=1vh"
+                }, 'slow');
+            });
+            $("#arrow").mouseleave(function () {
+                $("#arrow").animate({
+                    top: "-=1vh"
+                }, 'slow');
+                $("#arrow").css("background-color", "rgba(0,0,0,0)");
+            });
+
+            //Portfolio bio
+            $(".icon").click(function () {
+
+
+                if ($(".info").is(":visible")) {
+                    $(".info").fadeOut(250).delay(200);
+                    $($(this).attr("target")).slideDown(250);
+
+                } else if ($($(this).attr("target")).is(":hidden")) {
+                    $(".bio").slideUp(250).delay(200);
+                    $($(this).attr("target")).slideDown(250);
+                } else if ($($(this).attr("target")).is(":visible")) {
+                    $(".bio").slideUp(250).delay(200);
+                    $(".info").fadeIn(250);
+                }
+
+            });
+            //        $("#portfolio").click(function(){
+            //            if($("#house").is(":hidden")){
+            //                $(".bio").slideUp(250).delay(200);
+            //                $("#house").fadeIn(250);    
+            //            }
+            //        });
+
+            //Make nav bar turquoise over portfolio
+            var start = $("#nav").offset().top + $("#home").height() + $("#about").height() - 50;
+            var end = start + $("#portfolio").height() + 50;
+            $(document).scroll(function () {
+                if ($(this).scrollTop() > start && $(this).scrollTop() < end) {
+                    $('#nav').css({
+                        "background": "rgb(42, 187, 155)"
+                    });
+                } else {
+                    $('#nav').css({
+                        "background": "transparent"
+                    });
+                }
+            });
+            //Window loading
+            $(window).on("load", function () {
+                $("body").animate({
+                    scrollTop: 0
+                });
+                $("#load_screen").fadeOut("fast");
+            });
+
+            $('a[href*=#]:not([href=#])').click(function () {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
                     var target = $(this.hash);
-                    target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
                     if (target.length) {
                         $('html,body').animate({
                             scrollTop: target.offset().top
                         }, 1000);
-                    return false;
+                        return false;
                     }
                 }
             });
-        
-    });
+
+        });
     </script>
 
 </head>
@@ -87,22 +95,30 @@
     <div id="nav">
         <ul>
             <li class="navi">
-                <a class="header" href="#timeline"><h9>timeline</h9></a>
-            </li> 
-            <li class="navi">
-                <a class="header" href="#portfolio"><h9>portfolio</h9></a>
-            </li> 
-            <li class="navi">
-                <a class="header" href="#about"><h9>about</h9></a>
+                <a class="header" href="#timeline">
+                    <h9>timeline</h9>
+                </a>
             </li>
             <li class="navi">
-                <a class="header" href="#home"><h9>home</h9></a>
+                <a class="header" href="#portfolio">
+                    <h9>portfolio</h9>
+                </a>
+            </li>
+            <li class="navi">
+                <a class="header" href="#about">
+                    <h9>about</h9>
+                </a>
+            </li>
+            <li class="navi">
+                <a class="header" href="#home">
+                    <h9>home</h9>
+                </a>
             </li>
 
         </ul>
     </div>
     <div id="home">
-<!--        <img src="images/background.svg" width="200%">-->
+        <!--        <img src="images/background.svg" width="200%">-->
         <div id="name">
             <h1>
                 Sam Yuyitung
@@ -110,22 +126,23 @@
             <h2>
                 software developer
                 <br>
-                
+
             </h2>
         </div>
-            <a  href="#about"><img id="arrow" src="images/Arrow.svg" width="100%"></a>
-        </div>
+        <a href="#about"><img id="arrow" src="images/Arrow.svg" width="100%"></a>
+    </div>
     </div>
     <div id="about">
         <div id="quote">
             <h4> Hi, I'm Sam...</h4>
             <h7>
-            I am a studying systems design engineering at the University of Waterloo in Ontario, Canada, and was born and raised in Toronto
-<br><br>
-            Outside of the classroom, I love to code and make cool stuff. Whether its at an organized hackathon, or a personal project, I always have something on the go. I tend to gravitate towards front end development, wearables and human computer interaction
-        
-<br><br>
-                
+                I am a studying systems design engineering at the University of Waterloo in Ontario, Canada, and was born and raised in Toronto
+                <br>
+                <br> Outside of the classroom, I love to code and make cool stuff. Whether its at an organized hackathon, or a personal project, I always have something on the go. I tend to gravitate towards front end development, wearables and human computer interaction
+
+                <br>
+                <br>
+
 
             </h7>
         </div>
@@ -142,64 +159,16 @@
             <div>
                 <ul class=stack>
                     <li class="topper">
-                    <img class="icon" target="#translaid" src="images/translaid.svg" width="100%">
+                        <img class="icon" target="#pantry" src="images/pantry.svg" width="100%">
                     </li>
                     <li class="info">
-                        <h5>Translaid</h5>
+                        <h5>Smart(er) Pantry</h5>
                     </li>
                     <li class="info">
-                        <p> a Myo armband powered gesture to text to speech translator </p>
+                        <p>A pantry app built to track you food's expiry dates and provide recipes</p>
                     </li>
                     <li class="info">
-                        <p> Java, Lua and an Arduino </p>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <ul class=stack>
-                    <li class="topper">
-                    <img class="icon" target="#myo" src="images/myorganizer.svg" width="100%">
-                    </li>
-                    <li class="info">
-                        <h5>MyOrganizer</h5>
-                    </li>
-                    <li class="info">
-                        <p> a facilitator for stand-up meetings powered by a Myo armband </p>
-                    </li>
-                    <li class="info">
-                        <p> MEAN.io stack, Myo and Lua </p>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <ul class=stack>
-                    <li class="topper">
-                    <img class="icon" target="#tetris" src="images/tetris.svg" width="100%">
-                    </li>
-                    <li class="info">
-                        <h5>Tetris</h5>
-                    </li>
-                    <li class="info">
-                        <p> a rendition of the classic arcade games with cool new features!</p>
-                    </li>
-                    <li class="info">
-                        <p> Java applet in jGrasp </p>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <ul class=stack>
-                    <li class="topper">
-                    <img class="icon" target="#graffiti" src="images/graffiti.svg" width="100%">
-                    </li>
-                    <li class="info">
-                        <h5>NT Graffiti</h5>
-                    </li>
-                    <li class="info">
-                        <p>  a complementary digital edition of the top student newspaper in the TDSB</p>
-                    </li>
-                    <li class="info">
-                        <p> HTML, CSS, JQuery </p>
+                        <p> Android, Clarifai, Spoonacular </p>
                     </li>
                 </ul>
             </div>
@@ -219,43 +188,130 @@
                     </li>
                 </ul>
             </div>
+            <div>
+                <ul class=stack>
+                    <li class="topper">
+                        <img class="icon" target="#translaid" src="images/translaid.svg" width="100%">
+                    </li>
+                    <li class="info">
+                        <h5>Translaid</h5>
+                    </li>
+                    <li class="info">
+                        <p> a Myo armband powered gesture to text to speech translator </p>
+                    </li>
+                    <li class="info">
+                        <p> Java, Lua and an Arduino </p>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul class=stack>
+                    <li class="topper">
+                        <img class="icon" target="#graffiti" src="images/graffiti.svg" width="100%">
+                    </li>
+                    <li class="info">
+                        <h5>NT Graffiti</h5>
+                    </li>
+                    <li class="info">
+                        <p> a complementary digital edition of the top student newspaper in the TDSB</p>
+                    </li>
+                    <li class="info">
+                        <p> HTML, CSS, JQuery </p>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul class=stack>
+                    <li class="topper">
+                        <img class="icon" target="#myo" src="images/myorganizer.svg" width="100%">
+                    </li>
+                    <li class="info">
+                        <h5>MyOrganizer</h5>
+                    </li>
+                    <li class="info">
+                        <p> a facilitator for stand-up meetings powered by a Myo armband </p>
+                    </li>
+                    <li class="info">
+                        <p> MEAN.io stack, Myo and Lua </p>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul class=stack>
+                    <li class="topper">
+                        <img class="icon" target="#tetris" src="images/tetris.svg" width="100%">
+                    </li>
+                    <li class="info">
+                        <h5>Tetris</h5>
+                    </li>
+                    <li class="info">
+                        <p> a rendition of the classic arcade games with cool new features!</p>
+                    </li>
+                    <li class="info">
+                        <p> Java applet in jGrasp </p>
+                    </li>
+                </ul>
+            </div>
             <button type="button" class="slick-next">Next</button>
         </div>
-        
+
         <div class="bio" id="graffiti">
             <div id=title>
                 <h5>NT Graffiti</h5>
             </div>
             <div class="bioquote">
-                <p>Graffiti, the North Toronto CI student newspaper, is one of the most decorated student newspapers in all of Toronto. Coming out with 4 print copies a year sometimes is not enough. Me and a team created a digital edition of the newspaper. This allowed for additional content to complement the print edition of the newspaper.<br>
-    Some of these advantages of the digital platform are:<br>
-    &nbsp&nbsp&nbsp-   Sharing of articles and content with those not at the school<br>
-    &nbsp&nbsp&nbsp-   Additional media outlets (Podcasts, videos) <br>
-    &nbsp&nbsp&nbsp-   Time sensitive news (school sports scores, winners)<br><br>
-                    the website was a huge success leading to increased visibility and readership to the infamous student newspaper.
+                <p>Graffiti, the North Toronto CI student newspaper, is one of the most decorated student newspapers in all of Toronto. Coming out with 4 print copies a year sometimes is not enough. Me and a team created a digital edition of the newspaper. This allowed for additional content to complement the print edition of the newspaper.
+                    <br> Some of these advantages of the digital platform are:
+                    <br> &nbsp&nbsp&nbsp- Sharing of articles and content with those not at the school
+                    <br> &nbsp&nbsp&nbsp- Additional media outlets (Podcasts, videos)
+                    <br> &nbsp&nbsp&nbsp- Time sensitive news (school sports scores, winners)
+                    <br>
+                    <br> the website was a huge success leading to increased visibility and readership to the infamous student newspaper.
                 </p>
             </div>
-            <a href="https://github.com/Anfa-am/Graffiti" target="_blank"><img class="minicon" src="images/github.svg" width="100%"></a>
+            <table class="links">
+                <tr>
+                    <td class="icos">
+                <a href="https://github.com/Anfa-am/Graffiti" target="_blank"><img class="minicon" src="images/github.svg" width="100%"></a>
+                    </td>
+                </tr>
+            </table>
         </div>
         <div class="bio" id="tetris">
             <div id=title>
                 <h5>Tetris</h5>
             </div>
             <div class="bioquote">
-                <p>Tetris is one of the most storied computer games of all time. From its humble beginnings in arcades to being the bestselling Nintendo Gameboy game. Anyone and everyone knows what Tetris is. <br> <br> Serving as my capstone project for my grade 12 computer science class I challenged myself to recreate and expand on this game in cool new ways, and make it look pretty.  <br><br> Built in Java using jGrasp and utilising the Swing library, allowed me to implement cool new game modes such as invisible and ludicrous speed. All the while maintaining the core mechanics and feel of the classic arcade game. <br><br>
+                <p>Tetris is one of the most storied computer games of all time. From its humble beginnings in arcades to being the bestselling Nintendo Gameboy game. Anyone and everyone knows what Tetris is.
+                    <br>
+                    <br> Serving as my capstone project for my grade 12 computer science class I challenged myself to recreate and expand on this game in cool new ways, and make it look pretty.
+                    <br>
+                    <br> Built in Java using jGrasp and utilising the Swing library, allowed me to implement cool new game modes such as invisible and ludicrous speed. All the while maintaining the core mechanics and feel of the classic arcade game.
+                    <br>
+                    <br>
                 </p>
             </div>
-            <a href="https://github.com/syuyitung/tetris" target="_blank"><img class="minicon" src="images/github.svg" width="100%"></a>
+            <table class="links">
+                <tr>
+                    <td class="icos">
+                        <a href="https://github.com/syuyitung/tetris" target="_blank"><img class="minicon" src="images/github.svg" width="100%"></a>
+                    </td>
+                </tr>
+            </table>
         </div>
         <div class="bio" id="myo">
             <div id=title>
                 <h5>MyOrganizer</h5>
             </div>
             <div class="bioquote">
-                <p>The <a class="link" href="https://www.myo.com/" target="_blank">Myo</a> armband is a super cool cutting edge piece of technology that potentially has many applications for automating tasks. <br><br> Deloitte challenged my team to develop a use for the Myo to improve office productivity. To which we created a facilitator for stand-up meetings. Allowing the team members to actually display what they did rather than just show it and by adding the Myo allows these meetings to not be situated huddled around a laptop, as it is powered by gestures. <br><br> Furthermore, we wanted to add some extra productivity to it, and we decide to integrate a calendar / to-do list to fold events and deadlines into these meetings. Outside of the meeting time, the user has access to these calendars and can be shared within a team to have a constantly updating calendar and to-do list.
+                <p>The <a class="link" href="https://www.myo.com/" target="_blank">Myo</a> armband is a super cool cutting edge piece of technology that potentially has many applications for automating tasks.
+                    <br>
+                    <br> Deloitte challenged my team to develop a use for the Myo to improve office productivity. To which we created a facilitator for stand-up meetings. Allowing the team members to actually display what they did rather than just show it and by adding the Myo allows these meetings to not be situated huddled around a laptop, as it is powered by gestures.
+                    <br>
+                    <br> Furthermore, we wanted to add some extra productivity to it, and we decide to integrate a calendar / to-do list to fold events and deadlines into these meetings. Outside of the meeting time, the user has access to these calendars and can be shared within a team to have a constantly updating calendar and to-do list.
                 </p>
             </div>
-<!--            <a href="https://github.com/nickhaughton/Myo" target="_blank"><img class="minicon" src="images/github.svg" width="100%"></a>-->
+            <!--            <a href="https://github.com/nickhaughton/Myo" target="_blank"><img class="minicon" src="images/github.svg" width="100%"></a>-->
         </div>
         <div class="bio" id="translaid">
             <div id=title>
@@ -263,32 +319,86 @@
             </div>
             <div class="bioquote">
                 <p>
-                    At its core, the Myo allows the user to trigger events with gestures. When coming up with a potential project for EngHack 2015, my team thought of creating a sign language tool using the Myo. However the Myo cannot detect the small muscle movements caused by the position of a finger. Therefore we decided to come up with a way to use the Myo as a communication tool. <br><br> The end result was a gesture to text to speech communicator that is linked to the 15 most common phrases to assist anyone who can't speak the language, or can't speak total. <br><br> Our program through Bluetooth sent the information to a computer which has audio and visual feedback to communicate the phrase. In addition, we integrated an Arduino Uno to show the endless possibilities of this device.
+                    At its core, the Myo allows the user to trigger events with gestures. When coming up with a potential project for EngHack 2015, my team thought of creating a sign language tool using the Myo. However the Myo cannot detect the small muscle movements caused by the position of a finger. Therefore we decided to come up with a way to use the Myo as a communication tool.
+                    <br>
+                    <br> The end result was a gesture to text to speech communicator that is linked to the 15 most common phrases to assist anyone who can't speak the language, or can't speak total.
+                    <br>
+                    <br> Our program through Bluetooth sent the information to a computer which has audio and visual feedback to communicate the phrase. In addition, we integrated an Arduino Uno to show the endless possibilities of this device.
                 </p>
             </div>
-            <a href="https://github.com/joelzeng/Translaid" target="_blank"><img class="minicon" src="images/github.svg" width="100%"></a>
-            <a href="http://devpost.com/software/translaid-ouhz1y" target="_blank"><img class="minicon" src="images/devpost.png" width="100%"></a>
+            <table class="links">
+                <tr>
+                    <td class="icos">
+                        <a href="https://github.com/joelzeng/Translaid" target="_blank"><img class="minicon" src="images/github.svg" width="100%"></a>
+                    </td>
+                    <td class="icos">
+                        <a href="http://devpost.com/software/translaid-ouhz1y" target="_blank"><img class="minicon" src="images/devpost.png" width="100%"></a>
+                    </td>
+                </tr>
+            </table>
         </div>
-        
         <div class="bio" id="drake">
             <div id=title>
-                <a class="link" href="http://devpost.com/software/askthe6god-7giv4j" target="_blank">    <h5>Ask the 6ix God</h5></a>
+                <h5>Ask the 6ix God</h5>
             </div>
             <div class="bioquote">
                 <p>
-                    At HackThe6ix in January 2016, one of the main sponsers and available APIs was the <a class="link" href="https://www.indico.io/" target="_blank">indico.io</a> machine learning API. One of the main features is to extract information from text such as the mood of the sentence, the political lean and the key words to that sentence. With this information at our disposal, we decide to apply this text recognition to create a simple Drake themed virtual tarot machine similar to petersanswers.com in the form of an Android application. <br> <br> By creating a database on <a class="link" href="https://www.parse.com" target="_blank">Parse</a> we are able to easily store the tags and information of the Drake lyrics (responses) and quickly pull it down to be used in the app. <br><br>Front end wise, we creaded an simple Android app featuring a simple input textbox and a button to recieve your blessing from the 6god 
+                    At HackThe6ix in January 2016, one of the main sponsers and available APIs was the <a class="link" href="https://www.indico.io/" target="_blank">indico.io</a> machine learning API. One of the main features is to extract information from text such as the mood of the sentence, the political lean and the key words to that sentence. With this information at our disposal, we decide to apply this text recognition to create a simple Drake themed virtual tarot machine similar to petersanswers.com in the form of an Android application.
+                    <br>
+                    <br> By creating a database on <a class="link" href="https://www.parse.com" target="_blank">Parse</a> we are able to easily store the tags and information of the Drake lyrics (responses) and quickly pull it down to be used in the app.
+                    <br>
+                    <br>Front end wise, we creaded an simple Android app featuring a simple input textbox and a button to recieve your blessing from the 6god
                 </p>
             </div>
-            <a href="https://github.com/syuyitng/Askth6god" target="_blank"><img class="minicon" src="images/github.svg" width="100%"></a>
-            <a href="https://play.google.com/store/apps/details?id=anojenjeyapalan.asksixgod" target="_blank"><img class="minicon" src="images/android.svg" width="100%"></a>
+            <table class="links">
+                <tr>
+                    <td class="icos">
+                         <a class="link" href="http://devpost.com/software/askthe6god-7giv4j" target="_blank"><img class="minicon" src="images/devpost.png" width="100%"></a>
+                    </td>
+                    <td class="icos">
+                         <a href="https://github.com/syuyitung/askthe6god" target="_blank"><img class="minicon" src="images/github.svg" width="100%"></a>
+                    </td>
+                    <td class="icos">
+                        <a href="https://play.google.com/store/apps/details?id=anojenjeyapalan.asksixgod" target="_blank"><img class="minicon" src="images/android.svg" width="100%"></a>
+                    </td>
+                </tr>
+            </table>
+            
+        </div>
+        <div class="bio" id="pantry">
+            <div id=title>
+                <h5>Smarter Pantry</h5>
+            </div>
+            <div class="bioquote">
+                <p>
+                    At ConuHacks 2016, one of the possible challenges was to take an existing application, <a class="link" href="https://play.google.com/store/apps/details?id=macadamian.smartpantry&hl=en" target="_blank">Smart Pantry,</a> and make it even sweeter. Through our preliminary usage, we recognized that there were some easy areas of enhancement.
+                    <br>
+                    <br> One of the areas that we recognized was it took too long to enter the items into your pantry. Our solution was to implement the <a class="link" href="http://www.clarifai.com/api" target="_blank">Clarifai</a> image recognition api which can produce tags based off the picture of an image. For which we would sift through to determine the actual food name, out of the 20 returned image tags.
+                    <br>
+                    <br> We concluded that the main usage of this app is the recognition of when food will go bad, however the app offered no functionality to deal with this information. So, we created an option that searches through the <a class="link" href="https://spoonacular.com/">spoonacular</a> database of recipes, using your current pantry and prioriting your most at risk food items.
+                </p>
+            </div>
+            <table class="links">
+                <tr>
+                    <td class="icos">
+                        <a href="http://devpost.com/software/smarter-pantry" target="_blank"><img class="minicon" src="images/devpost.png" width="100%"></a>
+                    </td>
+                    <td class="icos">
+                        <a href="https://github.com/jimivyas/smarterpantry" target="_blank"><img class="minicon" src="images/github.svg" width="100%"></a>
+                    </td>
+                    <td class="icos">
+                        <a href="http://jimivyas.me/SmarterPantry/" target="_blank"><img class="minicon" src="images/link.svg" width="100%"></a>
+                    </td>
+                </tr>
+            </table>
         </div>
     </div>
-    
-    
 
 
 
-    
+
+
+
     <div id="timeline">
         <div id="topper">
             <h1>My story</h1>
@@ -296,13 +406,15 @@
         <table id="story">
             <tr>
                 <td class="lcell">
-                    <h5>City Of Toronto</h5><h7>Wading pool attendant<br>June 2013 - Sept 2015</h7>
+                    <h5>City Of Toronto</h5>
+                    <h7>Wading pool attendant
+                        <br>June 2013 - Sept 2015</h7>
                 </td>
-                <td  class="ccell">
+                <td class="ccell">
                     <img class="pic" src="images/ringBuoy.svg" width="100%">
                 </td>
                 <td>
-                    &nbsp   
+                    &nbsp
                 </td>
             </tr>
             <tr>
@@ -313,18 +425,21 @@
                     <img class="pic" src="images/nt.svg" width="100%">
                 </td>
                 <td class="rcell">
-                    <h5>North Toronto CI</h5><h7>Graduated June 2015</h7>
+                    <h5>North Toronto CI</h5>
+                    <h7>Graduated June 2015</h7>
                 </td>
             </tr>
             <tr>
                 <td class="lcell">
-                    <h5>Sporting Life</h5><h7>Sales associate<br>May - Sept 2015</h7>
+                    <h5>Sporting Life</h5>
+                    <h7>Sales associate
+                        <br>May - Sept 2015</h7>
                 </td>
                 <td class="ccell">
                     <img class="pic" src="images/sportinglife.svg" width="100%">
                 </td>
                 <td>
-                    &nbsp   
+                    &nbsp
                 </td>
             </tr>
             <tr>
@@ -335,13 +450,16 @@
                     <img class="pic" src="images/waterloo.svg" width="100%">
                 </td>
                 <td class="rcell">
-                    <h5>University of Waterloo</h5><h7>Systems Design Engineering<br>Sept 2015 - April 2020</h7>
+                    <h5>University of Waterloo</h5>
+                    <h7>Systems Design Engineering
+                        <br>Sept 2015 - April 2020</h7>
                 </td>
             </tr>
         </table>
-        <div id="ending-note">a
-            <h7>Want to learn more about me?<br> check out my resume</h7>
-         </div>
+        <div id="ending-note">
+            <h7>Want to learn more about me?
+                <br> check out my resume</h7>
+        </div>
         <a href="Sam%20Yuyitung%20Resume.pdf" target="_blank"><img id="resume" src="images/Resume.svg" width="200%"></a>
     </div>
     <div id="footer">
@@ -369,15 +487,15 @@
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.slick/1.3.15/slick.min.js"></script>
- 
-     <script type="text/javascript">
-        $(document).ready(function(){
+
+    <script type="text/javascript">
+        $(document).ready(function () {
             $(".port").slick({
                 infinite: false,
                 friction: 2,
-                touchScreen: false,
-                prevArrow:"<img class='a-left control-c prev slick-prev' src='../images/lArrow.svg'>",
-                nextArrow:"<img class='a-right control-c next slick-next' src='../images/rArrow.svg'>",
+                draggable: false,
+                prevArrow: "<img class='a-left control-c prev slick-prev' src='../images/lArrow.svg'>",
+                nextArrow: "<img class='a-right control-c next slick-next' src='../images/rArrow.svg'>",
                 slidesToShow: 3
             });
         });

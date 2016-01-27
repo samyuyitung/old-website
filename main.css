@@ -235,17 +235,27 @@ p{
     height: 60vh;
 }
 
-.minicon{
+.links{
     position: relative;
-    left: 37.5vw;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
     bottom: 1vh;
-    width: 5vw;
-    border-radius: 2.5vw;
+    height: 4vh; 
+    
+}
+.icos{
+    height: 4vh;    
+    width: 4vw;
+    padding: 1vw;
+    
+}
+.minicons{
+    
 }
 .minicon:hover{
     opacity: 0.6;
 }
-
 
 
 .bio{
@@ -260,6 +270,7 @@ p{
     padding: 0;
     margin: 0;
 }
+
 .bioquote{
     width: 90%;
     position: relative;
@@ -279,6 +290,9 @@ p{
 }
 #drake{
     background-color: #2f71c8;
+}
+#pantry{
+    background-color: #00cdcf;
 }
 .link{
     color: ghostwhite;
