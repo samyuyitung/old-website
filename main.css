@@ -312,7 +312,7 @@ p{
 
 #timeline{
     background-color: #2abb9b;
-    height: 120vh;
+    height: 140vh;
 }
 
 #story{
@@ -329,7 +329,8 @@ p{
     text-align: right;
 }
 .ccell{
-    padding: 0;
+    padding-left: 20px;
+    padding-right: 20px;
     width:7vw;
     text-align: center;
     height: 15vh;
