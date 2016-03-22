@@ -17,10 +17,11 @@
 }
 
 body {
-        width: 100vw;
-		margin: 0;
-		max-width: 100vw;
+        width: 100%;
+		max-width: 100%;
 		overflow-x: hidden;
+    margin: 0;
+    padding: 0;
 }
 ::-webkit-scrollbar{
   width:0px;   
@@ -29,32 +30,29 @@ body {
 /* Name */
 
 h1 {
-    margin: 0;
     font-family: cooper;
     color: ghostwhite;
     font-size: 100px;
+    line-height: 0;
 }
 h2 {
-    margin: 0;
     font-family: futura;
     color: ghostwhite;
     font-size: 50px;
 }
 h3{
-    margin: 0;
     font-family: futura;
     color: ghostwhite;
     font-size: 30px;
 
 }
 h4 {
-    margin-top: 1vh;
     font-family: cooper;
     color: ghostwhite;
     font-size: 50px;
 }
 h5{
-    margin: 0.5vh;
+    margin: 0;
     font-family: cooper;
     font-size: 50px;
     color: ghostwhite;
@@ -67,7 +65,6 @@ h7{
 
 h9 {
     color: dimgray;
-    margin: 0;
     font-family: cooper;
     font-size: 18px;
 }
@@ -81,7 +78,6 @@ p{
 #home,#about,#portfolio,#timeline,#footer{
     display: inline-block;
     width: 100%;
-    height: 101vh;
     padding: 0;
     margin: 0;
     position: static;
@@ -93,76 +89,71 @@ p{
     opacity: 1;
     position: fixed;
     z-index: 10;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
 }
 #load{
     position: fixed;
-    left: 48vw;
-    top:47.5vh;
-    width:5vh;
+    top: 47.5%;
+    width:50px;
+    left: 47.5%;
 }
-/* Landing page */
-
-#home {
-    background-color: dimgray;
-    background-image: url(images/background.png);
-    background-size: cover;
-    background-position: fixed;
-
-}
+/* Nav */
 .header{
     text-decoration: none;
 }
 .header:hover{
     text-decoration: line-through;
-    text-decoration-color: ghostwhite;
+    text-decoration-color: aliceblue
 }
 
-.navi{
-    margin-top: -0.5vh;
+.navi{    
+    float: right;   
     list-style: none;
-    float: right;
-    height: 4vh;
     text-align: center;
-    padding-left: 1vw;
-    padding-right: 1vw;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: -10px;
 }
 
 #nav{
-    height: 3.5vh;
     z-index: 2;
     position: fixed;
     margin: 0;
-    width: 100vw;
+    width: 100%;
+    display: block;
 }
-#name{
-    position: absolute;
-    top: 32vh;
-    left: 25vw;
-    width: 50vw;
-    text-align: center;
-}
-#arrow{
-    z-index: 1;
-    position: relative;
-    top: 84vh;
-    left: 46vw;
-    border-radius: 4vh;
-    width: 8vh;
+/* Landing page */
+
+#home {
+    height: 100.1vh;
+    background-color: dimgray;
+    background-image: url(images/background.png);
+    background-size: cover; 
+    background-position: fixed;
 }
 
+#name{
+    position: relative;
+    top: 30vh;
+    width: 650px;
+    text-align: center;
+    margin: auto;
+}
+#arrow{
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    margin: auto;    
+    position: relative;
+    top: 88vh;
+}
 /*About*/
-#about{
-    margin-top: -0.5vh;
-    height: 55vh;
+#about{ 
     background-color: rgb(42, 187, 155);    
 }
 
 #quote{
-    margin-top: 3vh;
-    position: relative;
-    top: 2vh;
     width: 50%;
     margin-left: auto;
     margin-right: auto;
@@ -171,111 +162,74 @@ p{
 /*portfolio*/
 #portfolio{
     z-index: -1;
-    height: 112vh;
     background: url(images/port.jpg);
     background-size: cover;
-    background-position: fixed;
+    height: 110vh;
 }
 
+#title{
+    text-align: center;
+    position: relative;
+    top: 20px;
+    width: 100%;
+}
+#subtitle{
+    position: relative;
+    top: 20px;
+    text-align: center;
+}
+#portfolio-wrapper{
+    width: 90%;
+    position: relative;
+    margin: auto;
+    
+}
+.projs{
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+}
+.top-slice{
+    top: 220px;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+}
+.project{
+    list-style: none;
+    text-align: center;
+    padding-bottom: 30px;
+    margin: auto;
+}
+
+.topper{
+    padding-bottom: 70px;    
+}
+
+.info{
+    padding-bottom: 70px;
+    widows: 80%;
+}
 .icon{
-    width: 10vw;
-    height: 10vw;
-    border-radius: 5vw;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
     margin: auto;
 }
 
 .icon:hover{
     opacity: 0.6;
     cursor: pointer;
-    
 }
-
-
-#title{
-    text-align: center;
-    position: relative;
-    top: 2vh;
-    width: 100%;
-    height: 7vh;
-}
-#subtitle{
-    position: relative;
-    top: 6vh;
-    text-align: center;
-    width: 100vw;
-}
-
-.port{
-    text-align: center;
-    position: relative;
-    top: 10vh;
-    left: 6.25vw;
-    width: 90vw;
-    height: 90vh;
-}
-.stack{
-    margin-left: 2.5vw;
-    height: 80vh;
-    margin: auto;
-    width: 25vw;
-    float: left;
-}
-#icons{
-    z-index: 1;
-    top: 8vh;
-}
-.info, .topper{
-    list-style: none;
-    text-align: center;
-    padding-bottom: 7vh;
-}
-
-#house{
-    top: 5vh;
-    height: 60vh;
-}
-
-.links{
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    width: auto;
-    bottom: 1vh;
-    height: 4vh; 
-    
-}
-.icos{
-    height: 4vh;    
-    width: 4vw;
-    padding: 1vw;
-    
-}
-.minicons{
-    
-}
-.minicon:hover{
-    opacity: 0.6;
-}
-
 
 .bio{
-    z-index: 1;
-    width: 80vw;
-    height: 64vh;
-    position:absolute;
-    left: 10vw;
-    top: 198vh;
     display: none;
-    opacity: 0.8;
-    padding: 0;
-    margin: 0;
+}
+.bioquote{
+    width: 95%;
+    margin: auto;
 }
 
-.bioquote{
-    width: 90%;
-    position: relative;
-    left: 5%;
-}
 #graffiti{
     background-color: #c83737;
 }
@@ -294,100 +248,104 @@ p{
 #pantry{
     background-color: #00cdcf;
 }
-.link{
-    color: ghostwhite;
-}
-.link:visited{
-    color: ghostwhite;
-}
-
-
 #larrow{
-    left: 2vw;
+    left: 10px;
 }
 #rarrow{
-    right: 2vw;
+    right: 10px;
 }
+.links{
+    margin: auto;
+}
+.icos{
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 80px;
+}
+
+
 /* TImeline */
 
 #timeline{
     background-color: #2abb9b;
-    height: 140vh;
 }
-
+#topper{
+    width: 100%;
+    text-align: center;
+}
 #story{
     position: relative;
-    top: 2vh;
+    top: 10px;
     column-count: 3;
-    table-layout: fixed;
-    margin-left: auto;
-    margin-right: auto
+    display: table;
+    margin: auto;
+}
+.rows{
+    margin-bottom: 50px;
+    margin-top: 50px;
 }
 .lcell{
-    width: 30vw;
-    height: 20vh;
     text-align: right;
+    width: 500px;
 }
 .ccell{
     padding-left: 20px;
     padding-right: 20px;
-    width:7vw;
     text-align: center;
-    height: 15vh;
 }
 .rcell{
+    margin: 0;
     text-align: left;
-    height: 15vh;
-    width: 30vw;
+    width: 500px;
 }
 
 .pic{
-    width: 8vw;
+    width: 160px;
 }
 #ending-note{
     text-align: center;
     margin-top: 7vh;
+    padding-bottom: 20px;
 }
 #resume{
+    width: 120px;
+    border-radius: 60px;
     position: relative;
-    left: 47vw;
-    top: 2vh;
-    width: 6vw;
-    border-radius: 3vw;
-
+    margin: auto;       
 }
 #resume:hover{
     opacity: 0.6;
 }
 /*footer*/
-#topper{
-    padding-top: 2vh;
-    text-align: center;
-}
+
 #footer{
     background-color: #2a2a2a;
-    height: 20vh;
+    height: 180px;
+}
+#top{
+    width: 20%;
+    margin: auto;
+    text-align: center;
 }
 #footer-list{
-    top:1vh;
-    width: 15vw;
     position: relative;
-    left: 42.5vw;
+    top:10px;
+    width: 15%;
+    margin: auto;
+    padding-bottom: 20px;
 }
 #list{
-    padding-left: 1vw;
-    padding-right: 1vw;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 .ending-link{
-    width: 3vw;
-    border-radius: 1.5vw;
+    width: 60px;
+    border-radius: 30px;
 }
 .ending-link:hover{
     opacity: 0.6;
 }
 #fine-print{
     position: relative;
-    top: 2.5vh;
-    height: 2vh;
     text-align: center;
 }
