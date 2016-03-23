@@ -11,6 +11,8 @@
     <script>
         $(document).ready(function () {
             //Arrpw
+          // alert($(".projs").height());
+            
             $("#arrow").mouseenter(function () {
                 $("#arrow").css("background-color", "rgb(42, 187, 155)");
                 $("#arrow").animate({
@@ -40,8 +42,8 @@
             });
 
             //Make nav bar turquoise over portfolio
-            var start = $("#nav").offset().top + $("#home").height() + $("#about").height() - 100;
-            var end = start + $("#portfolio").height() + 150;
+            var start = $("#nav").offset().top + $("#home").height() + $("#about").height();
+            var end = start + $("#portfolio").height() + $(".projs").height() / 5 + 150;
             $(document).scroll(function () {
                 if ($(this).scrollTop() > start && $(this).scrollTop() < end) {
                     $('#nav').css({
@@ -60,6 +62,7 @@
                     scrollTop: 0
                 });
                 $("#load_screen").fadeOut("fast");
+                
             });
             
             
