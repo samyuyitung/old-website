@@ -10,9 +10,6 @@
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
     <script>
         $(document).ready(function () {
-            //Arrpw
-          // alert($(".projs").height());
-            
             $("#arrow").mouseenter(function () {
                 $("#arrow").css("background-color", "rgb(42, 187, 155)");
                 $("#arrow").animate({
@@ -62,10 +59,9 @@
                     scrollTop: 0
                 });
                 $("#load_screen").fadeOut("fast");
-                
+
             });
-            
-            
+
             //nav scrolling
             $('a[href*=#]:not([href=#])').click(function () {
                 if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
@@ -131,11 +127,14 @@
         <div id="quote">
             <h4> Hi, I'm Sam...</h4>
             <h7>
-                I am a studying systems design engineering at the University of Waterloo in Ontario, Canada, and was born and raised in Toronto
+                I am a systems design engineering student at the University of Waterloo in Ontario, Canada. I was born and raised in Toronto.
                 <br>
-                <br> Outside of the classroom, I love to code and make cool stuff. Whether its at an organized hackathon, or a personal project, I always have something on the go. I am actively seeking different types of projects, yet I usually focus on web development and nearable technology
+<br> Outside of the classroom, I love to code and make cool stuff. Whether its at an organized hackathon or just a personal project, I always have something on the go. I am actively seeking out new and different types of projects, my common areas of focus are web development or IoT/wearable technologies.
+<br>
+<br> Check out my <a href="https://github.com/syuyitung">github</a> to see what I am currently up to.                <br>
                 <br>
-                <br>
+                
+                
             </h7>
         </div>
     </div>
@@ -148,7 +147,22 @@
         </div>
         <div id="portfolio-wrapper">
             <div class="projs">
-                <button type="button" class="slick-prev">Previous</button>
+                <button type="button" class="slick-prev">Previous</button><div>
+                    <ul class="project">
+                        <li class="topper">
+                            <img class="icon" target="#trakrecord" src="images/trakrecord.svg" width="100%">
+                        </li>
+                        <li class="info">
+                            <h5>TrakRecord</h5>
+                        </li>
+                        <li class="info">
+                            <p>A fitness tracking app optimized for marathon runners</p>
+                        </li>
+                        <li class="info">
+                            <p> Android, Estimote Beacons, Firebase </p>
+                        </li>
+                    </ul>
+                </div>
                 <div>
                     <ul class="project">
                         <li class="topper">
@@ -168,65 +182,65 @@
                 <div>
                     <ul class="project">
                         <li class="topper">
-                        <img class="icon" target="#drake" src="images/drake.png" width="100%">
+                            <img class="icon" target="#drake" src="images/drake.png" width="100%">
                         </li>
                         <li class="info">
-                        <h5>Ask 6god</h5>
-                    </li>
-                    <li class="info">
-                        <p>A virtual tarot Android app fueled by Drake lyrics and machine learning</p>
-                    </li>
-                    <li class="info">
-                        <p> Android, Parse, Indico.io </p>
-                    </li>
+                            <h5>Ask 6god</h5>
+                        </li>
+                        <li class="info">
+                            <p>A virtual tarot Android app fueled by Drake lyrics and machine learning</p>
+                        </li>
+                        <li class="info">
+                            <p> Android, Parse, Indico.io </p>
+                        </li>
                     </ul>
                 </div>
                 <div>
                     <ul class="project">
-                    <li class="topper">
-                        <img class="icon" target="#graffiti" src="images/graffiti.svg" width="100%">
-                    </li>
-                    <li class="info">
-                        <h5>NT Graffiti</h5>
-                    </li>
-                    <li class="info">
-                        <p> a complementary digital edition of the top student newspaper in the TDSB</p>
-                    </li>
-                    <li class="info">
-                        <p> HTML, CSS, JQuery </p>
-                    </li>
+                        <li class="topper">
+                            <img class="icon" target="#translaid" src="images/translaid.svg" width="100%">
+                        </li>
+                        <li class="info">
+                            <h5>Translaid</h5>
+                        </li>
+                        <li class="info">
+                            <p> a Myo armband powered gesture to text to speech translator </p>
+                        </li>
+                        <li class="info">
+                            <p> Java, Lua and an Arduino </p>
+                        </li>
                     </ul>
                 </div>
                 <div>
                     <ul class="project">
-                         <li class="topper">
-                        <img class="icon" target="#myo" src="images/myorganizer.svg" width="100%">
-                    </li>
-                    <li class="info">
-                        <h5>MyOrganizer</h5>
-                    </li>
-                    <li class="info">
-                        <p> a facilitator for stand-up meetings powered by a Myo armband </p>
-                    </li>
-                    <li class="info">
-                        <p> MEAN.io stack, Myo and Lua </p>
-                    </li>
+                        <li class="topper">
+                            <img class="icon" target="#graffiti" src="images/graffiti.svg" width="100%">
+                        </li>
+                        <li class="info">
+                            <h5>NT Graffiti</h5>
+                        </li>
+                        <li class="info">
+                            <p> a complementary digital edition of the top student newspaper in the TDSB</p>
+                        </li>
+                        <li class="info">
+                            <p> HTML, CSS, JQuery </p>
+                        </li>
                     </ul>
                 </div>
                 <div>
                     <ul class="project">
-                    <li class="topper">
-                        <img class="icon" target="#tetris" src="images/tetris.svg" width="100%">
-                    </li>
-                    <li class="info">
-                        <h5>Tetris</h5>
-                    </li>
-                    <li class="info">
-                        <p> a rendition of the classic arcade games with cool new features!</p>
-                    </li>
-                    <li class="info">
-                        <p> Java applet in jGrasp </p>
-                    </li>
+                        <li class="topper">
+                            <img class="icon" target="#tetris" src="images/tetris.svg" width="100%">
+                        </li>
+                        <li class="info">
+                            <h5>Tetris</h5>
+                        </li>
+                        <li class="info">
+                            <p> a rendition of the classic arcade games with cool new features!</p>
+                        </li>
+                        <li class="info">
+                            <p> Java applet in jGrasp </p>
+                        </li>
                     </ul>
                 </div>
                 <button type="button" class="slick-next">Previous</button>
@@ -276,31 +290,18 @@
                         </tr>
                     </table>
                 </div>
-                <div class="bio" id="myo">
-                    <div id=title>
-                        <h5>MyOrganizer</h5>
-                    </div>
-                    <div class="bioquote">
-                        <p>The <a class="link" href="https://www.myo.com/" target="_blank">Myo</a> armband is a super cool cutting edge piece of technology that potentially has many applications for automating tasks.
-                            <br>
-                            <br> Deloitte challenged my team to develop a use for the Myo to improve office productivity. To which we created a facilitator for stand-up meetings. Allowing the team members to actually display what they did rather than just show it and by adding the Myo allows these meetings to not be situated huddled around a laptop, as it is powered by gestures.
-                            <br>
-                            <br> Furthermore, we wanted to add some extra productivity to it, and we decide to integrate a calendar / to-do list to fold events and deadlines into these meetings. Outside of the meeting time, the user has access to these calendars and can be shared within a team to have a constantly updating calendar and to-do list.
-                        </p>
-                    </div>
-                    <!--            <a href="https://github.com/nickhaughton/Myo" target="_blank"><img class="minicon" src="images/github.svg" width="100%"></a>-->
-                </div>
+               
                 <div class="bio" id="translaid">
                     <div id=title>
                         <h5>Translaid</h5>
                     </div>
                     <div class="bioquote">
                         <p>
-                            At its core, the Myo allows the user to trigger events with gestures. When coming up with a potential project for EngHack 2015, my team thought of creating a sign language tool using the Myo. However the Myo cannot detect the small muscle movements caused by the position of a finger. Therefore we decided to come up with a way to use the Myo as a communication tool.
+                            At its core, the <a class="link" target="_blank" href="https://www.myo.com/">Myo</a> allows the user to trigger events with gestures. When coming up with a potential project for EngHack 2015, my team thought of creating a sign language tool using the Myo. However the Myo cannot detect the small muscle movements caused by the position of a finger. Therefore we decided to come up with a way to use the Myo as a communication tool.
                             <br>
                             <br> The end result was a gesture to text to speech communicator that is linked to the 15 most common phrases to assist anyone who can't speak the language, or can't speak total.
                             <br>
-                            <br> Our program through Bluetooth sent the information to a computer which has audio and visual feedback to communicate the phrase. In addition, we integrated an Arduino Uno to show the endless possibilities of this device.
+                            <br> Our program through Bluetooth sent the information to a computer which has audio and visual feedback to communicate the phrase. In addition, we integrated an Arduino Uno to showcase the endless possibilities of this device.
                         </p>
                     </div>
                     <table class="links">
@@ -340,7 +341,6 @@
                             </td>
                         </tr>
                     </table>
-
                 </div>
                 <div class="bio" id="pantry">
                     <div id=title>
@@ -369,14 +369,28 @@
                         </tr>
                     </table>
                 </div>
+                <div class="bio" id="trakrecord">
+                    <div id=title>
+                        <h5>TrakRecord</h5>
+                    </div>
+                    <div class="bioquote">
+                        <p>
+                            <a class="link" target="_blank" href="https://www.strava.com/">Strava</a> has become one of my most used apps over the past couple of years. It's mixture of competition and analytics has made me grow as a Cyclist. One of it's main features, segments, allow the user to get a greater understanding of their activity to improve and easily track goals. We wanted to bring this idea to a marathon setting by harnessing the power of the <a class="link" target="_blank" href="http://estimote.com/">estimote</a> IoT beacons. <br><br>
+                            We used these beacons as markers to save information and receive information to the user. Allowing them to receive contextual voice notications such as their distance remaining or placing. Information is also stored to show post race analytics such as speed, step count, and calories burned. 
+                            <br><br>
+                            This app was selected as a winner at Wearhack Toronto 2016, and will be showcased at the <a class="link" target="_blank" href="http://www.walkforsickkids.ca/">Sick Kids Great Camp Adventure Walk</a> in September 2016.
+                        </p>
+                    </div>
+                    <table class="links">
+                        <tr>
+                            <td class="icos">
+                                <a href="https://github.com/syuyitung/MarathonTracker" target="_blank"><img class="minicon" src="images/github.svg" width="100%"></a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
             </div>
         </div>
-
-
-
-
-
-
     </div>
     <div id="timeline">
         <div id="topper">
@@ -486,7 +500,7 @@
     <script type="text/javascript">
         $(document).ready(function () {
             $(".projs").slick({
-                infinite: true,
+                infinite: false,
                 friction: 2,
                 draggable: false,
                 prevArrow: "<img class='a-left control-c prev slick-prev' src='../images/lArrow.svg'>",

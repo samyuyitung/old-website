@@ -157,6 +157,7 @@ p{
     width: 50%;
     margin-left: auto;
     margin-right: auto;
+    padding-bottom: 25px;
 }
 
 /*portfolio*/
@@ -204,7 +205,12 @@ p{
 .topper{
     padding-bottom: 70px;    
 }
-
+.link{
+    color: ghostwhite
+}
+.link:visited{
+    color: ghostwhite
+}
 .info{
     padding-bottom: 70px;
     widows: 80%;
@@ -230,22 +236,23 @@ p{
 }
 
 #graffiti{
-    background-color: #c83737;
+    background-color: rgba(200, 55, 55,0.67);
 }
 #tetris{
-    background-color: #ff7f2a;
+    background-color: rgba(255, 127, 42,0.67);
 }
-#myo{
-    background-color: #b509b5;
-}
+
 #translaid{
-    background-color: #6495ed;
+    background-color: rgba(100, 149, 237,0.67);
 }
 #drake{
-    background-color: #2f71c8;
+    background-color: rgba(47, 113, 200,0.67);
 }
 #pantry{
-    background-color: #00cdcf;
+    background-color: rgba(0, 205, 207, 0.67);
+}
+#trakrecord{
+    background-color: rgba(214, 23, 177, 0.67);
 }
 #larrow{
     left: 10px;
@@ -300,6 +307,10 @@ p{
 
 .pic{
     width: 160px;
+}
+.pic:hover{
+    opacity: 0.6;
+
 }
 #ending-note{
     text-align: center;
