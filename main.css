@@ -17,9 +17,9 @@
 }
 
 body {
-        width: 100%;
-		max-width: 100%;
-		overflow-x: hidden;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
     margin: 0;
     padding: 0;
 }
@@ -278,6 +278,7 @@ p{
 #topper{
     width: 100%;
     text-align: center;
+    vertical-align: middle;
 }
 #story{
     position: relative;
