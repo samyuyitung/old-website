@@ -157,7 +157,7 @@ p{
     width: 50%;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 25px;
+    padding-bottom: 50px;
 }
 
 /*portfolio*/
@@ -252,7 +252,7 @@ p{
     background-color: rgba(0, 205, 207, 0.67);
 }
 #trakrecord{
-    background-color: rgba(214, 23, 177, 0.67);
+    background-color: rgba(239, 61, 61, 0.67);
 }
 #larrow{
     left: 10px;
