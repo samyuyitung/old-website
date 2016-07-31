@@ -30,15 +30,16 @@
             //Portfolio bio
             $(".icon").click(function () {
                 if ($(".info").css("opacity") == 1) {
-                    $(".info").css("opacity", "0");
-                    $($(this).attr("target")).slideDown(250);
+                    $(".info").fadeTo(150,0);
+                    $($(this).attr("target")).delay(100).slideDown(250);
 
                 } else if ($($(this).attr("target")).is(":hidden")) {
-                    $(".bio").slideUp(250).delay(200);
+                    $(".bio").slideUp(250).delay(500);
                     $($(this).attr("target")).slideDown(250);
                 } else if ($($(this).attr("target")).is(":visible")) {
-                    $(".bio").slideUp(250).delay(200);
-                    $(".info").css("opacity", "1");
+                    $(".bio").slideUp(250);
+                    $(".info").delay(200).fadeTo(150,1);
+
                 }
             });
 
