@@ -85,7 +85,7 @@ p{
 
 /*loading*/
 #load_screen{
-    background: #fff;
+    background: #eee;
     opacity: 1;
     position: fixed;
     z-index: 10;
@@ -122,6 +122,7 @@ p{
     margin: 0;
     width: 100%;
     display: block;
+    height: 35px;
 }
 /* Landing page */
 

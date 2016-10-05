@@ -1,5 +1,4 @@
 # syuyitung.github.io
-This is my personal website / resume
+This is my personal website / resume<br>
 Created with HTML, css & jQuery<br>
-all content is personally created and copyrighted.<br>
-site is <a href="samyuyitung.me">samyuyitung.me</a>
+site is <a href="samyuyitung.com">samyuyitung.com</a>
