@@ -44,8 +44,8 @@
             });
 
             //Make nav bar turquoise over portfolio
-            var start = $("#nav").offset().top + $("#home").height() + $("#about").height();
-            var end = start + $("#portfolio").height() + $(".projs").height() / 5 + 150;
+            var start =$("#home").height() + $("#about").height() - 20;
+            var end = start + $("#portfolio").height() + $(".projs").height() / 5 ;
             $(document).scroll(function () {
                 if ($(this).scrollTop() > start && $(this).scrollTop() < end) {
                     $('#nav').css({

@@ -9,8 +9,8 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="128"
-   height="128"
+   width="200"
+   height="200"
    id="svg2998"
    version="1.1"
    inkscape:version="0.48.4 r9939"
@@ -39,8 +39,8 @@
     </pattern>
     <filter
        id="filter2996"
-       style="color-interpolation-filters:sRGB;"
-       inkscape:label="Drop Shadow">
+       inkscape:label="Drop Shadow"
+       color-interpolation-filters="sRGB">
       <feFlood
          id="feFlood2998"
          flood-opacity="0.5"
@@ -54,7 +54,6 @@
          result="composite1" />
       <feGaussianBlur
          id="feGaussianBlur3002"
-         in="composite"
          stdDeviation="2"
          result="blur" />
       <feOffset
@@ -104,7 +103,7 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0,-924.36218)">
+     transform="translate(0,-852.36218)">
     <path
        sodipodi:type="arc"
        style="color:#000000;fill:none;stroke:none;stroke-width:1px;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
@@ -144,7 +143,7 @@
        sodipodi:open="true" />
     <g
        id="g2995"
-       transform="matrix(0.32000001,0,0,0.32000001,-1.4655831e-5,715.60629)"
+       transform="matrix(0.47989692,0,0,0.47989692,4.1064718,543.23034)"
        style="filter:url(#filter2996)">
       <path
          transform="matrix(1.2452189,0,0,1.9998973,-352.20103,-268.41605)"
