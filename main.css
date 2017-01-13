@@ -163,7 +163,7 @@ p{
 /*portfolio*/
 #portfolio{
 	z-index: -1;
-	background: url(images/port.jpg);
+	background: url(images/port.png);
 	background-size: cover;
 }
 
